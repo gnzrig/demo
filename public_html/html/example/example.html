@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        body{
+            align-content: center;
+        }
+
+        table, th, td{
+            padding: 10px;
+            border: 1px solid red;
+            border-collapse: collapse;
+        }
+
+    </style>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+    <table>
+        <tr>
+            <td>Name </td>
+            <td>ID </td>
+            <td>Password </td>
+            <td>Type </td>
+            <td>Phone Number</td>
+            <td>Status</td>
+            <td>Delete</td>
+        </tr>
+            <!--@loop(list)-->
+        <tr>
+            <td><a href="/main/index.jsp?mod=mod&id={{list.id}}">{{list.name}}</a></td>
+            <td>{{list.id}}</td>
+            <td>{{list.password}}</td>
+            <td>{{list.manager_type}}</td>
+            <td>{{list.mobile}}</td>
+            <td>{{list.status}}</td>
+            <td><a href="/main/index.jsp?mod=del&id={{list.id}}">{{list.name}}</a></td>
+        </tr>
+            <!--/loop(list)-->
+    </table>
+
+
+
+
+</body>
+</html>

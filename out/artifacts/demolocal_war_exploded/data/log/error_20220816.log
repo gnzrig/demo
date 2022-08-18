@@ -1,0 +1,6 @@
+[2022-08-16 17:39:47] at org.apache.jsp.main.index
+{DB.execute} INSERT INTO TB_MANAGER (uname,ummtype,upasswd,umobile,uid) VALUES (?,?,?,?,?) => Unknown column 'uname' in 'field list'
+{uname=, ummtype=, upasswd=, umobile=, uid=} (Unknown column 'uname' in 'field list')
+[2022-08-16 17:44:18] at org.apache.jsp.main.index
+{DB.execute} INSERT INTO TB_MANAGER (mobile,name,password,manager_type,id) VALUES (?,?,?,?,?) => Incorrect integer value: '' for column 'ID' at row 1
+{mobile=, name=, password=d41d8cd98f00b204e9800998ecf8427e, manager_type=, id=} (Incorrect integer value: '' for column 'ID' at row 1)
